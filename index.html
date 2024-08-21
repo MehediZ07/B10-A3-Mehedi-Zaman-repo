@@ -28,24 +28,8 @@
     <!-- Header section start  -->
     <header class=" bg-gradient-to-t to-[rgb(244,244,244)] from-[rgb(255,555,255)]">
         <nav class="container mx-auto">
-            <div class="navbar">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content space-x-4 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <a href="">Home</a>
-                            <a href="">Services</a>
-                            <a href="">Services</a>
-                            <a href="">Blogs</a>
-                            <a href="">Contact Us</a>
-                    </div>
+            <div class="navbar flex justify-between">
+                <div class=" ml-4 md:ml-0">
                     <div class="flex items-center"><a href="">
                             <div class="bg-pri-color flex items-center justify-center h-8 w-8 rounded-[50%]">
                                 <i class="fa-solid fa-arrow-up  rotate-45"></i>
@@ -54,18 +38,18 @@
 
                         <a class="btn btn-ghost font-bold text-2xl hover:bg-transparent">Rinterio</a>
                     </div>
-
                 </div>
-                <div class="navbar-center hidden lg:flex">
+
+                <div class="navbar-center hidden lg:flex ">
                     <ul class="menu menu-horizontal space-x-12 px-1 ">
                         <a class="text-[#737373] hover:text-[#494949] hover:font-bold" href="">Home</a>
                         <a class="text-[#737373] hover:text-[#494949] hover:font-bold" href="">Services</a>
-                        <a class="text-[#737373] hover:text-[#494949] hover:font-bold" href="">Services</a>
+                        <a class="text-[#737373] hover:text-[#494949] hover:font-bold" href="">Profile</a>
                         <a class="text-[#737373] hover:text-[#494949] hover:font-bold" href="">Blogs</a>
                         <a class="text-[#737373] hover:text-[#494949] hover:font-bold" href="">Contact Us</a>
                     </ul>
                 </div>
-                <div class="navbar-end space-x-4">
+                <div class=" space-x-4 hidden  md:flex">
 
                     <a class="bg-white flex items-center justify-center h-8 w-8 rounded-[50%]" href="">
                         <i class="fa-solid fa-arrow-up  rotate-45"></i>
@@ -78,27 +62,43 @@
                             <i class="fa-solid fa-arrow-up  rotate-45 text-white"></i>
                         </div>
                     </a>
+                    <div class="lg:hidden mr-4">
+                        <a class="bg-white flex items-center justify-center h-8 w-8 rounded-[50%]" href="">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden mr-4">
+                    <a class="bg-white flex items-center justify-center h-8 w-8 rounded-[50%]" href="">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
                 </div>
             </div>
         </nav>
         <!-- Banner section  -->
-        <div class="hero">
-            <div class="hero-content text-center">
-                <div class="max-w-6xl space-y-6">
-                    <img class="mx-auto" src="assets/banner.png" alt="">
-                    <h1 class="text-7xl font-bold">A barn house of this design has a striking appearance</h1>
-                    <p class="py-6 max-w-[90%] mx-auto">
-                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
-                        weathered wood, sleek metal accents, and large windows that flood the space with natural light.
-                    </p>
-                    <button class="btn hover:bg-[#ABEF5F80] bg-[#ABEF5F80] rounded-3xl">Book Consult
-                        <div class="bg-pri-color flex items-center justify-center h-8 w-8 rounded-[50%]">
-                            <i class="fa-solid fa-arrow-up  rotate-45 text-[#1C1C1C]"></i>
-                        </div>
-                    </button>
+        <div class="container mx-auto">
+            <div class="hero">
+                <div class="hero-content text-center">
+                    <div class="max-w-6xl space-y-6">
+                        <img class="mx-auto" src="assets/banner.png" alt="">
+                        <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold">A barn house of this design has a
+                            striking appearance</h1>
+                        <p class="py-6 max-w-[90%] mx-auto">
+                            The barn house captivates with its blend of rustic charm and modern sophistication,
+                            featuring
+                            weathered wood, sleek metal accents, and large windows that flood the space with natural
+                            light.
+                        </p>
+                        <button class="btn hover:bg-[#ABEF5F80] bg-[#ABEF5F80] rounded-3xl">Book Consult
+                            <div class="bg-pri-color flex items-center justify-center h-8 w-8 rounded-[50%]">
+                                <i class="fa-solid fa-arrow-up  rotate-45 text-[#1C1C1C]"></i>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+
     </header>
 </body>
 
