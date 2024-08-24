@@ -10,6 +10,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -19,17 +22,19 @@
                         'pri-color': '#ABEF5F',
                         'pri-txt-clr': '#212121',
                         'snd-txt-clr': '#494949'
-                    }
+                    },
                 }
             }
         }
-
-
-
     </script>
+    <style>
+        .manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
 
-<body class="bg-white">
+<body class="bg-white manrope">
     <!-- Header section start  -->
     <header class=" bg-gradient-to-t to-[rgb(244,244,244)] from-[rgb(255,555,255)]">
         <nav class="container mx-auto pt-4 md:pt-6">
@@ -41,17 +46,17 @@
                             </div>
                         </a>
 
-                        <a class="btn btn-ghost font-bold pri-txt-clr text-2xl hover:bg-transparent">Rinterio</a>
+                        <a class="btn btn-ghost font-extrabold pri-txt-clr text-2xl hover:bg-transparent">Rinterio</a>
                     </div>
                 </div>
 
                 <div class="navbar-center hidden lg:flex ">
                     <ul class="menu menu-horizontal space-x-12 px-1 ">
-                        <a class="text-[#737373] hover:text-[#494949] hover:font-bold" href="">Home</a>
-                        <a class="text-[#737373] hover:text-[#494949] hover:font-bold" href="">Services</a>
-                        <a class="text-[#737373] hover:text-[#494949] hover:font-bold" href="">Profile</a>
-                        <a class="text-[#737373] hover:text-[#494949] hover:font-bold" href="">Blogs</a>
-                        <a class="text-[#737373] hover:text-[#494949] hover:font-bold" href="">Contact Us</a>
+                        <a class="text-[#737373] hover:text-[#494949] hover:font-extrabold" href="">Home</a>
+                        <a class="text-[#737373] hover:text-[#494949] hover:font-extrabold" href="">Services</a>
+                        <a class="text-[#737373] hover:text-[#494949] hover:font-extrabold" href="">Profile</a>
+                        <a class="text-[#737373] hover:text-[#494949] hover:font-extrabold" href="">Blogs</a>
+                        <a class="text-[#737373] hover:text-[#494949] hover:font-extrabold" href="">Contact Us</a>
                     </ul>
                 </div>
                 <div class=" space-x-4 hidden  md:flex">
@@ -112,9 +117,10 @@
         <div class="container mx-auto">
             <div class="hero">
                 <div class="hero-content text-center">
-                    <div class="max-w-6xl space-y-6">
+                    <div class="max-w-7xl space-y-6">
                         <img class="mx-auto" src="assets/banner.png" alt="">
-                        <h1 class="text-4xl md:text-5xl pri-txt-clr lg:text-7xl font-bold">A barn house of this design
+                        <h1 class="text-4xl md:text-5xl pri-txt-clr lg:text-7xl font-extrabold">A barn house of this
+                            design
                             has a
                             striking appearance</h1>
                         <p class="py-6 max-w-[90%] mx-auto snd-txt-clr">
@@ -149,7 +155,7 @@
                             <button class="btn bg-white lg:mt-16 rounded-3xl hover:bg-transparent"><i
                                     class="fa-solid fa-arrow-right"></i> About
                                 Us</button>
-                            <h1 class="text-3xl md:text-5xl pri-txt-clr font-bold">We design thoughtful, liveable
+                            <h1 class="text-3xl md:text-5xl pri-txt-clr font-extrabold">We design thoughtful, liveable
                                 spaces</h1>
                             <p class="py-6 snd-txt-clr">
                                 With its weathered wood and sleek metal details, the barn home combines rustic charm
@@ -158,7 +164,7 @@
                             <div class="flex items-center p-6 rounded-xl bg-white"> <img src="assets/commercial.png"
                                     alt="">
                                 <div class="pl-8 text-left">
-                                    <h1 class="text-xl pri-txt-clr font-bold">Commercial</h1>
+                                    <h1 class="text-xl pri-txt-clr font-extrabold">Commercial</h1>
                                     <p class="snd-txt-clr">The field of commercial building engineering is concerned
                                         with the efficient, safe, and useful design, construction, and upkeep of
                                         structures used for commercial purposes.
@@ -168,7 +174,7 @@
                             <div class="flex items-center p-6 rounded-xl bg-white"> <img src="assets/residential.png"
                                     alt="">
                                 <div class="pl-8 text-left">
-                                    <h1 class="text-xl pri-txt-clr font-bold">Residential</h1>
+                                    <h1 class="text-xl pri-txt-clr font-extrabold">Residential</h1>
                                     <p class="snd-txt-clr">When planning and creating a home, residential building
                                         engineers prioritize energy efficiency, comfort, safety, and a pleasing
                                         aesthetic for the individual living areas.
@@ -185,22 +191,22 @@
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white p-12 gap-6 lg:mx-36 mb-24 rounded-2xl w-[90%] mx-auto lg:w-auto mt-24">
                     <div class="flex flex-col justify-center items-center space-y-4">
                         <i class="fa-regular text-3xl fa-message"></i>
-                        <h class="text-4xl text-[#494949] font-bold">235+</h>
+                        <h class="text-4xl text-[#494949] font-extrabold">235+</h>
                         <p class="snd-txt-clr">Happy Client Review</p>
                     </div>
                     <div class="flex flex-col justify-center items-center space-y-4">
                         <i class="fa-regular text-3xl fa-clipboard"></i>
-                        <h class="text-4xl text-[#494949] font-bold">50+</h>
+                        <h class="text-4xl text-[#494949] font-extrabold">50+</h>
                         <p class="snd-txt-clr">Work Departments</p>
                     </div>
                     <div class="flex flex-col justify-center items-center space-y-4">
                         <i class="fa-solid text-3xl fa-users-line"></i>
-                        <h class="text-4xl text-[#494949] font-bold">30K+</h>
+                        <h class="text-4xl text-[#494949] font-extrabold">30K+</h>
                         <p class="snd-txt-clr">Our Happy Client</p>
                     </div>
                     <div class="flex flex-col justify-center items-center space-y-4">
                         <i class="fa-solid text-3xl fa-user-group"></i>
-                        <h class="text-4xl text-[#494949] font-bold">307+</h>
+                        <h class="text-4xl text-[#494949] font-extrabold">307+</h>
                         <p class="snd-txt-clr">Staff Members</p>
                     </div>
                 </div>
@@ -210,7 +216,7 @@
                     <div class="text-center space-y-6 px-4">
                         <button class="btn bg-white lg:mt-16 rounded-3xl hover:bg-transparent"><i
                                 class="fa-solid fa-arrow-right snd-txt-clr"></i> We are working</button>
-                        <h1 class="text-3xl md:text-5xl pri-txt-clr font-bold">Our Works Process</h1>
+                        <h1 class="text-3xl md:text-5xl pri-txt-clr font-extrabold">Our Works Process</h1>
                         <p class="py-6 md:w-[40rem] mx-auto snd-txt-clr">
                             In order to finish projects effectively and safely, the construction work process entails
                             planning, designing, obtaining supplies, supervising personnel, and carrying out building
@@ -220,14 +226,14 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-12 gap-6">
                         <div class="flex flex-col justify-start items-start space-y-4 p-8 bg-[#E7C1D3] rounded-2xl">
                             <img src="assets/concept.png" alt="">
-                            <h class="text-3xl text-[#1C1C1C] font-bold">Concept</h>
+                            <h class="text-3xl text-[#1C1C1C] font-extrabold">Concept</h>
                             <p class="snd-txt-clr">In order to guarantee that constructions are efficient, safe, and
                                 functional, construction ideas include project planning, design, budgeting, and
                                 execution.</p>
                         </div>
                         <div class="flex flex-col justify-start items-start space-y-4 p-8 bg-[#EFDA6E] rounded-2xl">
                             <img src="assets/flow-chart.png" alt="">
-                            <h class="text-3xl text-[#1C1C1C] font-bold">Design Process</h>
+                            <h class="text-3xl text-[#1C1C1C] font-extrabold">Design Process</h>
                             <p class="snd-txt-clr">The design process involves sketching, refining, researching,
                                 conceptualizing, and finalizing plans to create aesthetic, functional, and efficient
                                 solutions.
@@ -235,7 +241,7 @@
                         </div>
                         <div class="flex flex-col justify-start items-start space-y-4 p-8 bg-[#A4DAC3] rounded-2xl">
                             <img src="assets/vision.png" alt="">
-                            <h class="text-3xl text-[#1C1C1C] font-bold">Supervision</h>
+                            <h class="text-3xl text-[#1C1C1C] font-extrabold">Supervision</h>
                             <p class="snd-txt-clr">Supervision in construction involves overseeing project ensuring
                                 quality, managing teams, progress, and coordinating tasks to meet deadlines and safety
                                 standards.
@@ -243,7 +249,7 @@
                         </div>
                         <div class="flex flex-col justify-start items-start space-y-4 p-8 bg-[#77AAEA] rounded-2xl">
                             <img src="assets/budget-planning.png" alt="">
-                            <h class="text-3xl text-[#1C1C1C] font-bold">Budget Planning</h>
+                            <h class="text-3xl text-[#1C1C1C] font-extrabold">Budget Planning</h>
                             <p class="snd-txt-clr">To efficiently manage financial resources during a project, budget
                                 planning entails forecasting costs, assigning cash, tracking expenses, and making
                                 adjustments to predictions.
@@ -260,7 +266,7 @@
             <div class="text-center space-y-6 px-4">
                 <button class="btn lg:mt-16 rounded-3xl snd-txt-clr bg-[#ABEF5F33] hover:bg-[#ABEF5F33]"><i
                         class="fa-solid fa-arrow-right "></i> Explore our Latest works</button>
-                <h1 class="text-3xl md:text-5xl pri-txt-clr font-bold">Our Latest Portfolio</h1>
+                <h1 class="text-3xl md:text-5xl pri-txt-clr font-extrabold">Our Latest Portfolio</h1>
                 <p class="py-6 md:w-[40rem] mx-auto snd-txt-clr">
                     Our portfolio displays our range of completed projects, demonstrating our skill and level of
                     craftsmanship in building. We provide dependable, creative solutions that are adapted to the needs
@@ -272,14 +278,14 @@
                             class="md:col-span-2 flex flex-col lg:flex-row text-start items-center lg:space-x-6 border-2 p-6 rounded-2xl">
                             <img class="h-full w-full lg:w-auto" src="assets/img1.png" alt="">
                             <div class="space-y-4 mt-6 md:mt-0">
-                                <h1 class="text-2xl font-bold pri-txt-clr">Commercial</h1>
+                                <h1 class="text-2xl font-extrabold pri-txt-clr">Commercial</h1>
                                 <p class="snd-txt-clr">The efficient, secure, and practical design, construction, and
                                     maintenance of
                                     buildings used for commercial purposes are the focus of the field of commercial
                                     building engineering.</p>
                                 <div class="">
                                     <div class="flex items-center space-x-4">
-                                        <a class="btn-ghost font-bold text-2xl hover:bg-transparent">View
+                                        <a class="btn-ghost font-extrabold text-2xl hover:bg-transparent">View
                                             Details</a>
                                         <a href="">
                                             <div
@@ -308,13 +314,13 @@
                             class="lg:col-span-2 flex flex-col lg:flex-row text-start items-center lg:space-x-6 border-2 p-6 rounded-2xl order-2">
                             <img class="h-full w-full lg:w-auto" src="assets/img4.png" alt="">
                             <div class="space-y-4 mt-6 md:mt-0">
-                                <h1 class="text-2xl pri-txt-clr font-bold">Residential</h1>
+                                <h1 class="text-2xl pri-txt-clr font-extrabold">Residential</h1>
                                 <p class="snd-txt-clr">Residential building experts give energy efficiency, comfort,
                                     safety, and a beautiful appearance for each living area first priority while
                                     designing and building a home.</p>
                                 <div class="">
                                     <div class="flex items-center space-x-4">
-                                        <a class="btn-ghost font-bold text-2xl hover:bg-transparent">View
+                                        <a class="btn-ghost font-extrabold text-2xl hover:bg-transparent">View
                                             Details</a>
                                         <a href="">
                                             <div
@@ -345,7 +351,7 @@
         <div class="bg-[#F4F4F4]">
             <div class=" container mx-auto py-16">
                 <div class="mx-auto mt-12">
-                    <h1 class="text-3xl md:text-5xl font-bold pri-txt-clr text-center"> Quick view of our <span
+                    <h1 class="text-3xl md:text-5xl font-extrabold pri-txt-clr text-center"> Quick view of our <span
                             class="text-pri-color">Ongoing projects</span>
                     </h1>
                 </div>
@@ -370,11 +376,11 @@
                             <div class="collapse-title text-xl pri-txt-clr font-medium">Project plane?
                             </div>
                             <div class="collapse-content">
-                                <p class="snd-txt-clr">This is a duplex house 3350Sqft, four bed three bath and two
-                                    parking
-                                    garage. <br>First floor- Living room, kitchen, laundry space and common bathroom.
-                                    <br>Second
-                                    floor- three bedroom (two bed with attached bath) and a small prayer room.
+                                <p class="snd-txt-clr whitespace-pre-line ">This is a duplex house 3350Sqft, four bed
+                                    three bath and two parking garage.
+                                    <br>First floor- Living room, kitchen, laundry space and common bathroom.
+                                    <br>Second floor- three bedroom (two bed with attached bath) and a small prayer
+                                    room.
                                 </p>
                             </div>
                         </div>
@@ -407,8 +413,8 @@
                             <div class="collapse-title text-xl pri-txt-clr font-medium">Project plane?
                             </div>
                             <div class="collapse-content">
-                                <p class="snd-txt-clr">This is a two steroid 46830sqft steel structure project with 80
-                                    front car parking, Every floor divider into two part.
+                                <p class="snd-txt-clr whitespace-pre-line">This is a two steroid 46830sqft steel
+                                    structure project with 80 front car parking, Every floor divider into two part.
                                     <br> First floor- food and kitchen item and storage.
                                     <br> Second floor- electronics, home appliance and a small office.
                                 </p>
@@ -443,9 +449,11 @@
                             <div class="collapse-title text-xl pri-txt-clr font-medium">Project plane?
                             </div>
                             <div class="collapse-content">
-                                <p class="snd-txt-clr">This is a duplex house 5400sqf Penthouse, three bed four bath and
-                                    two parking garage. <br>First floor- Living room, pool, and jacuzzi. <br>Second
-                                    floor- three bedroom with attached bath and a indoor pool.</p>
+                                <p class="snd-txt-clr whitespace-pre-line">This is a duplex house 5400sqf Penthouse,
+                                    three bed four bath and two parking garage.
+                                    <br>First floor- Living room, pool, and jacuzzi.
+                                    <br>Second floor- three bedroom with attached bath and a indoor pool.
+                                </p>
                             </div>
                         </div>
                         <div class="collapse collapse-plus bg-transparent">
@@ -471,7 +479,7 @@
                     <div class="text-center space-y-6 px-4">
                         <button class="btn lg:mt-16 rounded-3xl bg-[#ABEF5F33] hover:bg-[#ABEF5F33]"><i
                                 class="fa-solid fa-arrow-right"></i> Let’s Connect</button>
-                        <h1 class="text-3xl md:text-5xl pri-txt-clr font-bold">Let’s Discuss Next Project</h1>
+                        <h1 class="text-3xl md:text-5xl pri-txt-clr font-extrabold">Let’s Discuss Next Project</h1>
                         <p class="py-6 md:w-[40rem] mx-auto snd-txt-clr">
                             We are looking for your valuable time, we are definitely do something special for you, So,
                             fell free to contact with us any day.
@@ -516,7 +524,7 @@
 
                             <br>
                             <button
-                                class="btn hover:bg-pri-color bg-pri-color rounded-full h-16 w-full text-2xl font-bold">Send
+                                class="btn hover:bg-pri-color bg-pri-color rounded-full h-16 w-full text-2xl font-extrabold">Send
                                 Mail
                                 <div
                                     class="bg-[#1C1C1C] flex items-center justify-center h-8 w-8 font-normal  rounded-[50%]">
@@ -537,7 +545,7 @@
                     </div>
                 </a>
 
-                <a class="btn btn-ghost font-bold text-3xl text-white hover:bg-transparent">Rinterio</a>
+                <a class="btn btn-ghost font-extrabold text-3xl text-white hover:bg-transparent">Rinterio</a>
             </div>
             <p class="md:w-[40rem] text-[#737373]">The barn house, with its sleek metal accents and worn wood, combines
                 modern refinement with rustic charm to enchant.</p>
@@ -549,7 +557,8 @@
                 <a class="link link-hover">Contact Us</a>
             </nav>
             <nav class="w-full md:w-auto">
-                <button class="btn hover:bg-pri-color bg-pri-color rounded-full h-16 w-full  text-xl font-bold">Book
+                <button
+                    class="btn hover:bg-pri-color bg-pri-color rounded-full h-16 w-full  text-xl font-extrabold">Book
                     Consult
                     <div class="bg-[#1C1C1C] flex items-center justify-center h-8 w-8 font-normal  rounded-[50%]">
                         <i class="fa-solid fa-arrow-up rotate-45 text-white"></i>
